@@ -2,15 +2,15 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -26,23 +26,27 @@
 
         <cs301.birthdaycake.CakeView
             android:id="@+id/cakeview"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_width="match_parent"
+            android:layout_height="275sp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="match_parent" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="How many candles?" />
 
@@ -50,14 +54,13 @@
                     android:id="@+id/seekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:max="5"
                     android:progress="2" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <Switch
@@ -79,7 +82,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <Button
@@ -96,9 +99,15 @@
                     android:gravity="center"
                     android:onClick="goodbye"
                     android:text="goodbye" />
+
             </LinearLayout>
 
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="match_parent" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 
